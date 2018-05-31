@@ -140,8 +140,3 @@ quickSort (x:xs) =
     quickSort (filter (<=x) xs)
     ++ [x] ++ 
     quickSort (filter (>x) xs)
-
-pivoteQuick list =
-    if length list > 2
-    then div (head list ++ list !! (div (length list) 2) + last list) 3
-    else head list
